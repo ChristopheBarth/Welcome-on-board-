@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans 3", serif;
+}
+
+ul, button, a {
+    all: unset;
+}
+
+h1, h2, h3 {
+    font-family: "Montserrat", serif;;
+}
+
+/* NAVBAR */
+
+nav {
+    background-color: #A306B6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+nav > img {
+    height: 4rem;
+}
+
+nav > ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+/* HEADER */
+
+header {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 2rem;
+    /* min-height: calc(50vh - 134px); */
+    /* ICI LE CALC PERMET DE FAIRE UN CALCUL */
+}
+
+header > img {
+    height: 6rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: white;
+}
+
+header > h1 {
+    color: white;
+    max-width: 8ch;
+}
+
+/* VERSION DESKTOP POUR RENDRE RESPONSIVE */
+
+@media screen and (min-width: 992px) {
+    /* NAVBAR */
+
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* HEADER */
+
+    header {
+        flex-direction: row;
+        justify-content: center;
+        gap: 160px;
+    }
+
+    header > img {
+        height: 240px;
+    }
+} 
